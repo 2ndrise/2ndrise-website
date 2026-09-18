@@ -10,18 +10,21 @@
   <title>2ND RISE – Coming Soon</title>
 
   <style>
-    html, body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
       margin: 0;
       padding: 0;
       width: 100%;
       min-height: 100%;
-      background-color: #0d100d;
+      background: #0d100d;
     }
 
     body {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      overflow-x: hidden;
     }
 
     .landing {
@@ -31,7 +34,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      background-color: #0d100d;
+      background: #0d100d;
     }
 
     .landing img {
@@ -43,7 +46,28 @@
       padding: 0;
     }
 
+    /* Smartphone */
+    @media (max-width: 700px) {
+
+      .landing {
+        width: 100%;
+        min-height: 100svh;
+      }
+
+      .landing img {
+        width: 100%;
+        height: auto;
+        max-width: none;
+      }
+    }
+
+    /* Desktop / Tablet */
     @media (min-width: 701px) {
+
+      .landing {
+        align-items: center;
+      }
+
       .landing img {
         width: auto;
         max-width: 100%;
@@ -60,7 +84,7 @@
   <main class="landing">
 
     <img
-      src="./IMG_20260918_234318.png"
+      src="./IMG_20260918_234213.png"
       alt="2ND RISE – Coming Soon"
     >
 
