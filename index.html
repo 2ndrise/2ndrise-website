@@ -35,14 +35,34 @@
       width: 100%;
       margin: 0;
       padding: 0;
+      text-align: center;
+      background: #0d100d;
     }
 
     .landing-page img {
       display: block;
       width: 100%;
+      max-width: 1200px;
       height: auto;
-      margin: 0;
+      margin: 0 auto;
       padding: 0;
+      object-fit: contain;
+    }
+
+    @media (max-width: 600px) {
+
+      .landing-page {
+        padding-top: 12px;
+      }
+
+      .landing-page img {
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+
     }
 
   </style>
