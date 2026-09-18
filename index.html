@@ -1,122 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
+  <meta charset="UTF-8">
 
-  <meta charset="utf-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, viewport-fit=cover"
-  >
-
-  <meta
-    name="description"
-    content="2ND RISE – Für alle, die noch was vorhaben."
-  >
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>2ND RISE – Coming Soon</title>
 
   <style>
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       min-height: 100%;
-      background: #0d100d;
+      background-color: #0d100d;
     }
 
     body {
-      overflow-x: hidden;
-    }
-
-    .landing-page {
-      width: 100%;
-      min-height: 100vh;
-      min-height: 100svh;
-
       display: flex;
       justify-content: center;
       align-items: flex-start;
-
-      margin: 0;
-      padding: 0;
-
-      background: #0d100d;
     }
 
-    .landing-image {
+    .landing {
+      width: 100%;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      background-color: #0d100d;
+    }
+
+    .landing img {
       display: block;
       width: 100%;
       height: auto;
       max-width: 100%;
-      margin: 0 auto;
+      margin: 0;
       padding: 0;
-      object-fit: contain;
     }
-
-
-    /* Smartphone */
-
-    @media (max-width: 700px) {
-
-      .landing-page {
-        width: 100%;
-        min-height: 100svh;
-        margin: 0;
-        padding: 0;
-      }
-
-      .landing-image {
-        display: block;
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-        object-fit: contain;
-      }
-
-    }
-
-
-    /* Tablet und Desktop */
 
     @media (min-width: 701px) {
-
-      .landing-page {
-        min-height: 100svh;
-        align-items: flex-start;
-      }
-
-      .landing-image {
+      .landing img {
         width: auto;
-        height: 100svh;
         max-width: 100%;
+        max-height: 100vh;
         object-fit: contain;
       }
-
     }
-
   </style>
 
 </head>
 
-
 <body>
 
-  <main class="landing-page">
+  <main class="landing">
 
     <img
-      class="landing-image"
-      src="IMG_20260918_234318.png"
-      alt="2ND RISE – Wear Your Next Chapter – Coming Soon"
+      src="./IMG_20260918_234318.png"
+      alt="2ND RISE – Coming Soon"
     >
 
   </main>
