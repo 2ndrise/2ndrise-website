@@ -2,11 +2,12 @@
 <html lang="de">
 
 <head>
+
   <meta charset="utf-8">
 
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1.0"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
   >
 
   <meta
@@ -17,6 +18,10 @@
   <title>2ND RISE – Coming Soon</title>
 
   <style>
+
+    * {
+      box-sizing: border-box;
+    }
 
     html,
     body {
@@ -33,53 +38,25 @@
 
     .landing-page {
       width: 100%;
+      min-height: 100vh;
+      min-height: 100svh;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
       margin: 0;
       padding: 0;
-      text-align: center;
+
       background: #0d100d;
     }
 
-    .landing-page img {
+    .landing-image {
       display: block;
-      width: 100%;
-      max-width: 1200px;
-      height: auto;
-      margin: 0 auto;
-      padding: 0;
-      object-fit: contain;
-    }
 
-    @media (max-width: 600px) {
+      width: auto;
+      height: 100vh;
+      height: 100svh;
 
-      .landing-page {
-        padding-top: 12px;
-      }
-
-      .landing-page img {
-        width: 90%;
-        max-width: 90%;
-        height: auto;
-        margin: 0 auto;
-        object-fit: contain;
-      }
-
-    }
-
-  </style>
-
-</head>
-
-<body>
-
-  <main class="landing-page">
-
-    <img
-      src="file_000000008298820ab139e0e906c91189.jpg"
-      alt="2ND RISE – Wear Your Next Chapter – Coming Soon"
-    >
-
-  </main>
-
-</body>
-
-</html>
+      max-width: 100%;
+      object
