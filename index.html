@@ -53,10 +53,74 @@
 
     .landing-image {
       display: block;
-
-      width: auto;
-      height: 100vh;
-      height: 100svh;
-
+      width: 100%;
+      height: auto;
       max-width: 100%;
-      object
+      margin: 0 auto;
+      padding: 0;
+      object-fit: contain;
+    }
+
+
+    /* Smartphone */
+
+    @media (max-width: 700px) {
+
+      .landing-page {
+        width: 100%;
+        min-height: 100svh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .landing-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        object-fit: contain;
+      }
+
+    }
+
+
+    /* Tablet und Desktop */
+
+    @media (min-width: 701px) {
+
+      .landing-page {
+        min-height: 100svh;
+        align-items: flex-start;
+      }
+
+      .landing-image {
+        width: auto;
+        height: 100svh;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <main class="landing-page">
+
+    <img
+      class="landing-image"
+      src="IMG_20260918_234318.png"
+      alt="2ND RISE – Wear Your Next Chapter – Coming Soon"
+    >
+
+  </main>
+
+</body>
+
+</html>
